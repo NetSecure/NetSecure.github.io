@@ -4,46 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Net Secure Cyber Security Services</title>
-  
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  
-  <!-- Custom CSS
-  <link rel="stylesheet" href="css/styles.css"> -->
-<style>
-body {
-/*  padding-top: 56px; /* Space for fixed navbar */
-}
 
-.hero {
-  padding: 60px 0;
-  background: url('../images/hero-bg.jpg') no-repeat center center;
-  background-size: cover;
-}
+  <!-- Custom CSS -->
+  <style>
+    body {
+      padding-top: 56px; /* Space for fixed navbar */
+    }
 
-.card {
-  text-align: center;
-  margin-bottom: 30px;
-}
+    .hero {
+      padding: 60px 0;
+      background: url('https://via.placeholder.com/1500x500') no-repeat center center;
+      background-size: cover;
+      color: white;
+    }
 
-.card-img-top {
-  font-size: 4rem;
-  color: #007bff;
-  padding: 20px;
-}
+    .card {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-footer a {
-  text-decoration: none;
-}
+    .card-img-top {
+      font-size: 4rem;
+      color: #007bff;
+      padding: 20px;
+    }
 
-</style>
+    footer a {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: #007bff;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">NetSecure</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -54,27 +59,27 @@ footer a {
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
-  
+
   <!-- Hero Section -->
-  <header class="hero bg-primary text-white text-center">
+  <header class="hero text-center">
     <div class="container">
       <h1 class="display-4">Protect Your Digital World</h1>
       <p class="lead">Comprehensive cybersecurity services tailored for your needs.</p>
       <a href="#services" class="btn btn-light btn-lg">Learn More</a>
     </div>
   </header>
-  
+
   <!-- Services Section -->
   <section id="services" class="my-5">
     <div class="container">
@@ -113,7 +118,48 @@ footer a {
       </div>
     </div>
   </section>
-  
+
+  <!-- About Section -->
+  <section id="about" class="my-5">
+    <div class="container">
+      <h2 class="text-center">About Us</h2>
+      <p class="text-center">NetSecure is dedicated to providing top-notch cybersecurity services to protect your digital assets. Our team of experts brings years of experience in identifying and mitigating cyber threats. We offer a range of services including penetration testing, network security, and consulting to ensure your organization remains secure against evolving threats.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="my-5">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+         <!-- <h4>Our Address</h4>
+          <p>123 Cybersecurity Lane, Suite 100<br>
+          Tech City, TX 12345<br>
+          Phone: (123) 456-7890<br>-->
+          Email: <a href="mailto:info@netsecure.github.io">info@netsecure.github.io</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2024 NetSecure. All rights reserved.</p>
@@ -121,11 +167,10 @@ footer a {
     <a href="#" class="text-white ml-2"><i class="fab fa-twitter"></i></a>
     <a href="#" class="text-white ml-2"><i class="fab fa-linkedin-in"></i></a>
   </footer>
-  
+
   <!-- jQuery, Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
